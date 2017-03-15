@@ -414,7 +414,9 @@ var getAccounts = function(req, res) {
 
 var getWorkspace = function(req, res) {
   var url = process.env.ONSHAPE_PLATFORM + '/api/documents/d/' + req.query.documentId + '/workspaces';
-
+  console.trace("getWorkspace");
+  console.trace(req.user.accessToken);
+  console.trace("getWorkspace");
   request.get({
     uri: url,
     headers: {
