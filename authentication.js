@@ -27,7 +27,7 @@ function init() {
   passport.use(new OnshapeStrategy({
       clientID: oauthClientId,
       clientSecret: oauthClientSecret,
-      callbackURL: hostedPath + "/oauthRedirect",
+      callbackURL: "https://aqueous-harbor-68833.herokuapp.com/oauthRedirect",
       authorizationURL: oauthPath + "/oauth/authorize",
       tokenURL: oauthPath + "/oauth/token",
       userProfileURL: platformPath + "/api/users/session"
